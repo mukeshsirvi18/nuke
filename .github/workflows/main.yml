@@ -30,13 +30,9 @@ jobs:
       run: |
         export PATH=$PATH:/usr/local/bin
         which cloud-nuke
-        cloud-nuke version
+        cloud-nuke --version
 
     - name: Run Cloud Nuke
       run: |
         export PATH=$PATH:/usr/local/bin
-        cloud-nuke aws --region us-east-1 --force
-
-    - name: Run Cloud Nuke
-      run: |
         cloud-nuke aws --region us-east-1 --force
