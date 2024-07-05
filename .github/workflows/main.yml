@@ -1,7 +1,7 @@
 name: Destroy AWS Resources
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs at midnight every day
+    - cron: '*/1 * * * *' # Runs at midnight every day
 jobs:
   destroy-resources:
     runs-on: ubuntu-latest
