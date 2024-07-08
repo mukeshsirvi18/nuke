@@ -22,9 +22,9 @@ jobs:
 
     - name: Install Cloud Nuke
       run: |
-        curl -LO https://github.com/gruntwork-io/cloud-nuke/releases/download/v0.10.1/cloud-nuke_linux_amd64
-        chmod +x cloud-nuke_linux_amd64
-        sudo mv cloud-nuke_linux_amd64 /usr/local/bin/cloud-nuke
+        curl -LO https://github.com/gruntwork-io/cloud-nuke/releases/download/v0.37.1/cloud-nuke_darwin_amd64
+        chmod +x cloud-nuke_darwin_amd64
+        sudo mv cloud-nuke_darwin_amd64 /usr/local/bin/cloud-nuke
 
     - name: Verify Cloud Nuke Installation
       run: |
